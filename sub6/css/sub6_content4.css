@@ -1,0 +1,4 @@
+#content .contact{width: 1400px; margin: 0 auto;}
+#content .news{width: 1400px; margin: 150px auto; }
+#content ul{display: flex; gap: 30px;}
+#content ul li img{width: 300px; border-radius: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);}

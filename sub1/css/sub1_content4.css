@@ -1,0 +1,286 @@
+@charset "utf-8";
+#content .swiper-container{padding: 50px 0 50px 100px; overflow: visible;}
+/* sub_nav2 */
+.sub_nav2{width: 100%;}
+.sub_nav2 ul{width: 1050px; margin: 0 auto; display: flex;gap: 30px;}
+.sub_nav2 ul li{width: 35%; text-align: center; }
+
+.sub_nav2 ul li .tab-btn{
+    font-family: "Noto Sans KR";
+    font-size: 1.5rem; font-weight:500; padding: 15px 0; color: #050D1B;
+    width: 100%; border-radius: 40px; cursor: pointer; border: none;
+    position: relative; border: 1px solid #F6F6F6; background: #F6F6F6;
+    transition: all 0.3s ease-in-out;}
+.sub_nav2 ul li .tab-btn:hover{color: #E40214; background: #fff; border: 1px solid #E40214;}
+.sub_nav2 ul li .tab-btn .current{color: #fff; background: #E40214;}
+.sub_nav2 ul li + li {border-left: none;}
+.sub_nav2 ul li + ul{border: none;}
+
+.tab-btn::after {
+    content: url(../images/content4/arrow_down.svg); 
+    width: 40px; 
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+  }
+  
+  .tab-btn:hover::after {
+    top: 80px;
+    opacity: 1;
+    color: #050D1B;
+  }
+
+
+
+
+/* 사업장소개 */
+.content_area{width: 2000px; position: relative; top: 0; left: 50%; transform: translateX(-50%); overflow: hidden;
+  height: 1800px;}
+
+
+/* 서울본사 */
+.first{width: 1400px; margin: 0 auto; position: relative;}
+.content_area .first .first_content1{overflow: hidden; border-radius: 30px; margin-top: 150px;}
+.content_area .first .first_content1 dl{line-height: 2rem;}
+
+.content_area .first .first_content1 dl dt{position: absolute; left: 70px; top: 80px;
+    font-size: 2.8rem; font-weight: 500; color: #fff;}
+.content_area .first .first_content1 dl dd{padding-bottom: 25px;width: 700px;position: absolute; left: 70px; top: 200px;font-size: 1.2rem; color: #fff;
+    border-bottom: 1px solid #E40214; opacity: 0; transition: all .5s ease-out;}
+.content_area .first .first_content1 dl p{font-size: 1.2rem;padding-top: 50px; position: absolute; left: 70px; top: 290px; color: #fff; opacity: 0; transition: all .5s ease-out;}
+.content_area .first .first_content1 dl span{font-size: 1.3rem; color: #E40214; position: absolute; top: 130px; left: 70px;}
+.content_area .first .first_content1 dl a{width: 120px; font-size: 1.1rem; background: #E40214;
+    border-radius: 25px; padding:5px 15px 7px; text-align: center;font-weight: 400; color: #fff;
+    position: absolute; left: 70px; top: 420px; opacity: 0; border: 1px solid #E40214; 
+    transition: all .5s ease-out;
+}
+.content_area .first .first_content1 dl a:hover{background:0;}
+
+
+.content_area .first .first_content1 img{transition: all .5s ease-out; border-radius: 30px}
+
+.content_area .first .first_content1:hover img{filter: grayscale(100%) brightness(30%); transform: scale(1.1); border-radius: 30px}
+.content_area .first .first_content1:hover dd{opacity:1;}
+.content_area .first .first_content1:hover p{opacity:1;}
+.content_area .first .first_content1:hover span{opacity:1;}
+.content_area .first .first_content1:hover a{opacity: 1;}
+
+/* 서울본사-슬라이드 */
+
+.first_content2{width: 1400px; margin: 250px auto; }
+.first_content2 dl dt{font-size: 3rem; font-weight: 500;}
+.first_content2 dl dd{font-size: 1.5rem;font-weight: 400; line-height: 2.5rem; padding-top: 10px;}
+.first_content2 ul li img{border-radius: 20px; width: 100%;}
+
+.first_content2 ul li span{
+    font-size: 1.2rem; 
+    margin-top: 20px; 
+    display: block; 
+    position: relative;
+    width: max-content;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 1;
+    color: #333;
+    border-radius: 30px;
+    transition: all .2s ease-out;
+}
+
+.first_content2 ul li:hover span{ 
+    border: 1px solid #E40214; 
+    color: #E40214;
+    transition: all .2s ease-out;
+}
+
+
+/* 창원공장 */
+.second{width: 1400px; margin: 0 auto; position: relative;}
+.second .second_content1 {overflow: hidden;border-radius: 30px; margin-top: 150px;}
+.second .second_content1 dl{line-height: 2rem;}
+
+.second .second_content1 dt{position: absolute; right: 70px; top: 80px;
+    font-size: 2.8rem; font-weight: 500; color: #fff;}
+.second .second_content1 dl p{font-size: 1.3rem; color: #E40214; position: absolute; top: 130px; right: 70px;}
+
+.second .second_content1 dl dd{text-align: end;
+    padding-bottom: 25px;width: 700px;position: absolute; right: 70px; top: 200px;font-size: 1.2rem; color: #fff;
+    border-bottom: 1px solid #E40214; opacity: 0; transition: all .5s ease-out;}
+.second .second_content1 dl span{font-size: 1.2rem; position: absolute; right: 70px; top: 345px;color: #fff; opacity: 0; transition: all .5s ease-out;}
+
+.second .second_content1 dl a{width: 120px; font-size: 1rem; background: #E40214;
+    border-radius: 6px; padding:5px 5px; text-align: center;font-weight: 400; color: #fff;
+    position: absolute; right: 70px; top: 420px; opacity: 0; transition: all .5s ease-out;}
+
+.second .second_content1 img{transition: all .5s ease-out;}
+.second .second_content1:hover img{filter: grayscale(100%) brightness(30%); transform: scale(1.1);}
+.second .second_content1:hover dd{opacity:1;}
+.second .second_content1:hover span{opacity:1;}
+.second .second_content1:hover a{opacity: 1;}
+
+
+.second .second_content1 dl a{width: 120px; font-size: 1.1rem; background: #E40214;
+    border-radius: 25px; padding:5px 15px 7px; text-align: center;font-weight: 400; color: #fff;
+    position: absolute; right: 70px; top: 400px; opacity: 0; border: 1px solid #E40214;
+    transition: all .5s ease-out;}
+.second .second_content1 dl a:hover{background:0;}
+
+
+/* 창원공장-슬라이드 */
+
+.second_content2{width: 1400px; margin: 250px auto; }
+.second_content2 dl dt{font-size: 3rem; font-weight: 500;}
+.second_content2 dl dd{font-size: 1.5rem;font-weight: 400; line-height: 2.5rem; padding-top: 10px;}
+.second_content2 ul li img{border-radius: 20px; width: 100%;}
+
+.second_content2 ul li span{
+    font-size: 1.2rem; 
+    margin-top: 20px; display: block; 
+    position: relative;
+    width: max-content;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 1;
+    color: #333;
+    border-radius: 30px;
+    transition: all .2s ease-out;
+}
+
+/* .second_content2 ul li span::before{
+content: '';
+position: absolute;
+top: 0; left: 0;
+width: 0;
+height: 100%;
+background: #050D1B;
+color: #fff;
+z-index: -1;
+transition: all .5s ease-out;
+border-radius: 30px;
+}
+    
+.second_content2 ul li:hover span::before {width: 200%;} */
+.second_content2 ul li:hover span{
+    color: #E40214; 
+    border: 1px solid #E40214;
+    transition: all .2s ease-out;
+}
+
+/* 국내지사 */
+.third{width: 1400px; margin: 150px auto 250px;}
+.third ul{display: flex; flex-wrap: wrap; gap: 20px; }
+.third ul li{position: relative; overflow: hidden; height: 636px; min-width: 300px; flex: 1; border-radius: 20px;}
+
+.third ul li dt{transition: all .5s ease-out;position: absolute;
+    bottom: 30px; left: 60px; color: #fff;font-size: 2rem; font-weight: 500;}
+.third ul dd{opacity: 0; transition: all .5s ease-out;}
+.third ul p{opacity: 0; transition: all .5s ease-out;}
+.third ul li img{transition: all .5s ease-out; width: 100%; height: 100%;}
+.third ul li:nth-of-type(1) img{width: 200%;}
+
+.third ul li:hover dt{color: #ffffff63;}
+.third ul li:nth-of-type(2) dt{ position: absolute;bottom: 30px; left: 60px;}
+.third ul li:hover dd{opacity: 1;}
+.third ul li:hover p{opacity: 1;}
+.third ul li:hover img{filter: brightness(30%); transform: scale(1.2);}
+
+
+.third ul li dd{color: #fff; position: absolute; top: 320px; left: 60px;
+    width: 350px; text-align: justify; line-height: 2rem; font-size: 1.2rem; font-weight: 400;
+border-bottom: 1px solid #fff; padding-bottom: 25px;}
+
+.third ul li:nth-of-type(1) p{color: #fff; position: absolute; bottom:140px; left: 60px; font-size: 1.2rem;}
+.third ul li:nth-of-type(2) p{color: #fff; position: absolute; bottom:140px; left: 60px; font-size: 1.2rem;}
+.third ul li:nth-of-type(3) p{color: #fff; position: absolute; bottom:140px; left: 60px; font-size: 1.2rem;}
+.third ul li:nth-of-type(2) {margin-top: 50px;}
+
+
+/* 해외지사 */
+.fourth .fourth_top{width: 1400px; margin: 150px auto 100px;}
+.fourth_top img{margin-top: 50px;}
+
+.fourth_top dl{text-align: left;}
+.fourth_top dl dt{font-size: 2.8rem; font-weight: 500; color: #050D1B;}
+.fourth_top dl dt span{color: #E40214;}
+.fourth_top dl dd{font-size: 1.2rem; color: #050D1B;
+    margin-top: 20px; font-weight: 400;}
+
+
+.accordion_box{width: 1400px; margin: 0 auto 150px;}
+.accordion_box .collapsible {
+background-color: #F6F6F6;
+color: #050D1B;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: 1px solid #F6F6F6;
+text-align: left;
+font-size: 1.5rem;
+font-weight: 600;
+transition: all .2s ease-out;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+
+.accordion_box .collapsible:hover {
+background-color:#fff;
+border: 1px solid #E40214;
+}
+
+
+.accordion_box .content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+background-color: #fff;
+margin-bottom: 10px;
+} 
+
+.accordion_box .collapsible::after {
+content: '\002B';
+color:#050D1B;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+
+.accordion_box .active::after {
+content: "\2212";
+}
+
+/* .accordion_box .collapsible::before {
+    content: ''; display: block;
+    width: 0; height: 2px;
+    background: #E40214;
+    transition: all .5s;
+    position: relative; top: 45px; left: -5px;
+}
+
+.accordion_box .collapsible:hover::before {
+    content: ''; display: block;
+    width: 1370px; height: 2px;
+    background: #E40214;
+    transition: all .5s;
+    position: relative; top: 45px; left: -5px;
+} */
+
+.content li dl{padding: 50px 50px; display: flex; align-items: center;
+border-bottom: 1px solid #ccc;}
+.content li:last-child dl{border-bottom: 0;}
+
+.content li dl dt{font-size: 1.4rem; font-weight: 500; width: 350px;}
+
+.content li dl dd strong{font-size: 1.2rem;margin-bottom: 20px; display: block;}
+.content li dl dd p{font-size: 1.2rem; font-weight: 300;}
+
+
+
+

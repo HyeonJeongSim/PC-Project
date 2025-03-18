@@ -1,0 +1,98 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+
+    // $userid = $_SESSION['userid'];
+    // $username = $_SESSION['username'];
+    // $usernick = $_SESSION['usernick'];
+    // $userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEOPLE | 한국마이콤</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../common/css/aos.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./common/css/sub5_content_1common.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="./common/images/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="gnb">글로벌네비게이션 바로가기</a>
+    </div>
+   
+    <div class="wrap">
+        
+        <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/sub5_title.jpg" alt="">
+            <span>인재채용</span>
+        </div>
+
+        <div class="sub_nav">
+            <ul>
+                <li><a class= "current" href="./sub5_1.html">PEOPLE</a></li>
+                <li><a href="../notice/list.php">채용공고</a></li>
+            </ul>
+        </div>
+
+       
+        <article id="content">
+            <div class="container">
+
+                <img src="./images/content1/p99.png" alt="" data-aos="fade-up">
+                <div class="top" data-aos="fade-up">
+                    <dl>
+                        <dd>관리본부  I  인사팀</dd>
+                        <dt>구성원들의 업무 최적화를 책임지는 김호민입니다.</dt>
+                        <dd>General Manager</dd>
+                    </dl>
+                </div>
+                <div class="top_context" data-aos="fade-up">
+                   
+                    <dl>
+                        <dt>Q. 자기소개와 업무 소개를 부탁드립니다.</dt>
+                        <dd>안녕하세요, 저는 한국마이콤 관리본부 인사팀에서 General Manager로 근무하는 김호민입니다. 제 업무는 회사의 인사 전략과 조직 구조를 최적화하여, 구성원들이 각자의 역할을 잘 수행할 수 있도록 지원하는 것입니다. 특히, 인재 채용, 교육, 평가 및 보상 체계를 관리하고, 직원들의 업무 효율성을 높이는 데 중요한 역할을 합니다. 또한, 직원들의 만족도를 높여 조직의 성과가 향상될 수 있도록 노력하고 있습니다.</dd>
+                        <dt>Q. 하루를 어떻게 보내시나요?</dt>
+                        <dd>(오전) 출근 후, 회사 전반의 인사 관련 업무를 점검하고, 부서별로 필요한 지원 사항을 파악합니다. 직원들의 직무와 성과를 분석하여 개선 사항을 논의하기도 하죠.
+                            (점심) 점심시간에는 동료들과 함께 식사를 하며 직원들의 다양한 의견을 듣고, 문제 해결 방안을 모색합니다.
+                            (오후) 오후에는 면담, 교육 프로그램 운영, 성과 평가와 같은 주요 업무를 집중적으로 진행합니다. 새로운 정책이나 프로그램이 도입될 때마다 직원들과 원활한 소통을 위해 설명회도 진행하죠.
+                            (퇴근 후) 퇴근 후에는 다음 날 회의 준비를 하거나 인사 관련 최신 동향을 파악하기 위해 관련 서적이나 기사를 읽습니다.</dd>
+                        <dt>Q. 입사를 위해 가장 열심히 준비하셨던 부분은 무엇이었나요?</dt>
+                        <dd>입사 전에는 인사 관리와 관련된 다양한 이론을 공부하는 데 많은 시간을 투자했습니다. 특히, 조직 관리와 HRM 시스템에 대한 깊이 있는 이해를 바탕으로, 사람 중심의 경영 전략을 세우는 데 집중했습니다. 또한, 다양한 기업에서의 인사 경험을 쌓기 위해 여러 인턴십과 프로젝트를 수행했습니다.</dd>
+                        <dt>Q. 마지막으로 취업을 준비하시는 분들에게 응원의 한 말씀 부탁드립니다.</dt>
+                        <dd>인사 업무는 사람을 이해하고, 그들이 최상의 성과를 낼 수 있도록 돕는 일입니다. 여러분이 준비하는 동안 자신이 좋아하는 분야에서 경험을 쌓고, 실제 현장에서 배운 것을 바탕으로 자신만의 인사 전략을 세워보세요. 힘든 순간도 있겠지만, 그 과정에서 얻는 경험이 여러분을 더욱 성장시키고 좋은 기회를 가져올 것입니다.</dd>
+                    </dl>
+                </div>
+                <a href="./sub5_1.html" data-aos="fade-up">목록</a>
+            </div>
+           
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+    </div>
+
+    <script src="../common/js/aos.js"></script>
+    <script> AOS.init({easing: 'ease-in-out-sine'});</script>
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/common.js"></script>
+
+</body>
+</html>

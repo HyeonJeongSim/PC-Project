@@ -1,0 +1,430 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+
+    // $userid = $_SESSION['userid'];
+    // $username = $_SESSION['username'];
+    // $usernick = $_SESSION['usernick'];
+    // $userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업장소개 | 한국마이콤</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../common/css/swiper.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content4.css">
+   
+    <link rel="shortcut icon" type="image/x-icon"  href="./common/images/favicon.ico">
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="gnb">글로벌네비게이션 바로가기</a>
+    </div>
+  
+    <div class="wrap">
+
+        <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/sub1_back.jpg" alt="">
+            <span>기업소개</span>
+        </div>
+
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub1_1.html">경영이념</a></li>
+                <li><a href="./sub1_2.html">회사연혁</a></li>
+                <li><a href="./sub1_3.html">인증서</a></li>
+                <li><a class= "current" href="./sub1_4.html">사업장소개</a></li>
+                <li><a href="./sub1_5.html">오시는 길</a></li>
+            </ul>
+        </div>
+        
+       
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <a href="../index.html"><i class="fa-solid fa-house"></i><span class="hidden">home</span></a>&nbsp;&nbsp;
+                    <i class="fa-solid fa-angle-right" style="color: #ccc;"></i>&nbsp;&nbsp;기업소개&nbsp;&nbsp;<i class="fa-solid fa-angle-right" style="color: #ccc;"></i>&nbsp;&nbsp;<a href="./sub1_4.html"><strong>사업장소개</strong></a>
+                </div>
+                <span data-aos="zoom-in">OFFICE</span>
+                <h2 data-aos="zoom-in">사업장소개</h2>
+                <p data-aos="zoom-in">한국마이콤은 4개의 국내 지사와<br>창원 공장을 운영하고 있습니다.</p>
+            </div>
+    
+
+            <div class="sub_nav2">
+                <ul>
+                    <li><button class="tab-btn">서울본사</button></li>
+                    <li><button class="tab-btn">창원공장</button></li>
+                    <li><button class="tab-btn">국내지사</button></li>
+                    <li><button class="tab-btn">해외지사</button></li>
+                </ul>
+            </div>
+
+            <div class="content_area">
+
+                <!-- 서울본사 -->
+                <div class="first">
+
+                    <div class="first_content1" data-aos="fade-up">
+                        <div>
+                            <img src="./images/content4/sub1_1.jpg" alt="">
+                        </div>
+                        
+                        <dl >
+                            <dt>서울본사</dt>
+                            <span>Seoul Headquarter</span>
+                            <dd>서울특별시 용산구 서계동에 위치한 본사 사업장으로 1973년 서울 중구 무교동에서 설립하여 2008년 현재의 사옥으로 이전 하였습니다. 지방의 지사와 제조를 관리를 통해 지속적인 품질관리와 기술향상에 힘쓰고 있습니다.
+                            </dd>
+                        
+                            <p>조직구성 : 시장개발본부, 영업본부. 플랜트본부. 서비스본부. 관리본부 <br>
+                               주요업무 : 영업. 기업관리. 대외협력. 서비스지원. 기술지원
+                            </p>
+                            <a href="./sub1_5.html">사업장 찾기</a>
+                        </dl>
+                    </div>
+
+                    <div class="first_content2">
+                        <dl data-aos="fade-up">
+                            <dt>서울 본사 내부 시설</dt>
+                            <dd>최첨단 시설과 창의적인 공간으로 가득한 한국마이콤 사무실은 <br>
+                                직원들의 혁신과 협업을 위해 세심하게 설계되었습니다.</dd>
+                        </dl>
+
+                        <div class="swiper-container swiper1" data-aos="fade-left">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide"><img src="./images/content4/building.jpg" alt="본사 신사옥 전경 이미지"><span>본사 신사옥 전경</span></li>
+                                <li class="swiper-slide"><img src="./images/content4/office.jpg" alt="본사 사무실 이미지"><span>본사 사무실</span></li>
+                                <li class="swiper-slide"><img src="./images/content4/meeting.jpg" alt="본사 대회의실 이미지"><span>본사 대회의실</span></li>
+                                <li class="swiper-slide"><img src="./images/content4/rest.jpg" alt="휴게공간 이미지"><span>휴게공간</span></li>
+                            </ul>
+                          
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 창원공장 -->
+                <div class="second">
+                        <div class="second_content1" data-aos="fade-up">
+                            <div data-aos="fade-up"><img src="./images/content4/sub1_2.jpg" alt=""></div>
+                            
+                            <dl>
+                                <dt>창원공장</dt>
+                                <p>Changwon Factory</p>
+                                <dd>1985년 경남 창원시 의창구 팔용동에 준공해 가동중인 창원공장은 열교환기, 압력용기, Unit Assembly 제조기지로서 지속적인 품질 관리와 원가 절감, 생산성 향상을 꾀하며 고객만족을 실현하기 위하여 노력하고 있습니다.
+                                </dd>
+                            
+                                <span>주요업무 : 설계. 품질관리. 제품생산, 구매</span>
+                                <a href="./sub1_5.html">사업장 찾기</a>
+                            </dl>
+                        </div>
+
+                        <div class="second_content2" data-aos="fade-up">
+                            <dl>
+                                <dt>창원 공장 내부 시설</dt>
+                                <dd>최첨단 시설과 창의적인 공간으로 가득한 한국마이콤 사무실은 <br>
+                                    직원들의 혁신과 협업을 위해 세심하게 설계되었습니다.</dd>
+                            </dl>
+    
+                            <div class="swiper-container swiper2" data-aos="fade-left">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><img src="./images/content4/building2.jpg" alt="창원 공장 사옥 전경"><span>창원 공장 사옥 전경</span></li>
+                                    <li class="swiper-slide"><img src="./images/content4/office2.jpg" alt="창원 공장 사무실"><span>창원 공장 사무실</span></li>
+                                    <li class="swiper-slide"><img src="./images/content4/meeting2.jpg" alt="창원 공장 이미지"><span>창원 공장 회의실</span></li>
+                                    <li class="swiper-slide"><img src="./images/content4/rest2.jpg" alt="휴게공간 이미지"><span>휴게공간</span></li>
+                                </ul>
+                           
+                            </div>
+					        
+                        </div>
+                </div>
+                
+                
+                <!-- 국내지사 -->
+                <div class="third">
+                    <ul>
+                        <li><img src="../sub1/images/content4/sub1_3.jpg" alt="" >
+                            <dl>
+                                <dt>부산지사</dt>
+                                <dd>2012년 부산광역시 중구 중앙동으로 이전하여, 도심지의 유리한 위치를 활용해 부산 · 영남 지역의 사업 운영 효율성을 높였습니다.</dd>
+                                <p>주요업무 : 영업 및 서비스</p>
+                            </dl>
+                        </li>
+                        <li><img src="../sub1/images/content4/sub1_4.jpg" alt="">
+                            <dl>
+                                <dt>여수지사</dt>
+                                <dd>2014년 1월, 여수지사를 설립하여 영업과 전담 서비스 인력을 갖추고, 최상의 서비스와 고객 만족을 실현해가고 있습니다.</dd>
+                                <p>주요업무 : 영업 및 서비스</p>
+                            </dl>
+                        </li>
+                        <li><img src="../sub1/images/content4/sub1_5.jpg" alt="">
+                            <dl>
+                                <dt>익산지사</dt>
+                                <dd>2019년 8월, 전라북도 익산시 고척동에 익산지사를 설립하여 지역 거점을 확보하고 지방 고객과의 접근성을 강화하고 있습니다.</dd>
+                                <p>주요업무 : 영업 및 서비스</p>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 해외지사 -->
+         
+                   <div class="fourth">
+                     <div class="fourth_top">
+                         <dl data-aos="fade-up">
+                           <dt>글로벌 네트워크를 구축하여 <br>
+                             <span>상호 협력하며 산업을 선도하는 한국마이콤</span></dt>
+                           <dd>MAYEKAWA의 해외 주요 사업장을 소개합니다.<br>전 세계35개국에90해외 거점을 운영하고 있습니다.</dd>
+                         </dl>
+                         <img src="./images/content4/global_back.png" alt="">
+                     </div>
+                    
+                         <div class="accordion_box" data-aos="fade-up">
+                             <button type="button" class="collapsible active" onclick="collapse(this);">
+                                 Asia Pacific</button>
+                                 <ul class="content">
+                                     <li>
+                                         <dl>
+                                             <dt>Japan, Tokyo</dt>
+                                             <dd>
+                                                 <strong>MAYEKAWA MFG. CO., LTD.</strong>
+                                                 <p>3-14-15 Botan Koto-ku, Tokyo 135-8482, Japan</p>                                        
+                                                 <p>TEL:(81)-3-3642-8181</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                                     <li>
+                                         <dl>
+                                             <dt>China, Shanghai</dt>
+                                             <dd>
+                                                 <strong>
+                                                     MAYEKAWA CHINA MFG. CO., LTD</strong>
+                                                 <p>Rm. 703B, Building 1, Hongqiao Vanke Center, Lane 988,Shenchang Road, China</p>                                        
+                                                 <p>TEL:(86) 21-5234-1988</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                     
+                                     <li>
+                                         <dl>
+                                             <dt>India, New Delhi</dt>
+                                             <dd>
+                                                 <strong>MAYEKAWA INDIA PVT. LTD.</strong>
+                                                 <p>801 & 811, Iris Tech Park, 8Th Floor, Sector-48, Sohna Road, Gurgaon-122002, Haryana, India</p>                                        
+                                                 <p>TEL:(91) 12-4408-0080</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                                     <li>
+                                         <dl>
+                                             <dt>Singapore, New Delhi</dt>
+                                             <dd>
+                                                 <strong>MAYEKAWA SINGAPORE PTE. LTD.</strong>
+                                                 <p>126 Tagore Lane Singapore 787553</p>                                        
+                                                 <p>TEL:(91) 12-4408-0080</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                                 </ul>
+                     
+                         <button type="button" class="collapsible" onclick="collapse(this);">North America</button>
+                     
+                         <ul class="content">
+                             <li>
+                                 <dl>
+                                     <dt>Canada, Vancouver</dt>
+                                     <dd>
+                                         <strong>Vancouver Office</strong>
+                                         <p>#4-1595 Cliveden Avenue, Delta, B.C., V3M 6M2, Canada</p>                                        
+                                         <p>TEL:(1) 604-270-1544</p>
+                                     </dd>
+                                 </dl>
+                             </li>
+                     
+                             <li>
+                                 <dl>
+                                     <dt>USA, New York</dt>
+                                     <dd>
+                                         <strong>New York Office</strong>
+                                         <p>250 West Nyack Road, Suite 250, West Nyack, NY 10994, U.S.A.</p>                                        
+                                         <p>TEL:(1) 914-301-9770</p>
+                                     </dd>
+                                 </dl>
+                             </li>
+                         </ul>
+                     
+                         <button type="button" class="collapsible" onclick="collapse(this);">Latin America</button>
+                     
+                         <ul class="content">
+                             <li>
+                                 <dl>
+                                     <dt>Aregentina, Buenos Aires</dt>
+                                     <dd>
+                                         <strong>Cascavel Office</strong>
+                                         <p>Dr.Jose Valentin Gomez 151, LOT 42, Haedo-Partido de Moron,Buenos Aires CP B1706FMA, Argentina</p>                                        
+                                         <p>TEL:(54) 11-4609-2000</p>
+                                     </dd>
+                                 </dl>
+                             </li>
+                     
+                             <li>
+                                 <dl>
+                                     <dt>Brazil, Cascavel</dt>
+                                     <dd>
+                                         <strong>Cascavel Office</strong>
+                                         <p>Rua Theofanio Maltezo, 592 Barracão 02 Cancelli Cascavel Pr CEP 85811-480, Brazil</p>                                        
+                                         <p>TEL:(55) 11-9-8475-6453</p>
+                                     </dd>
+                                 </dl>
+                             </li>
+                     
+                             <li>
+                                 <dl>
+                                     <dt>Chile, Santiago</dt>
+                                     <dd>
+                                         <strong>Santiago Office</strong>
+                                         <p>Cordillera No.331, Modulo C2 Y C3, Quilicura, Santiago, Chile</p>                                        
+                                         <p>TEL:(56) 2-2739-0202</p>
+                                     </dd>
+                                 </dl>
+                             </li>
+                             <li>
+                                 <dl>
+                                     <dt>Mexico, Mexico City</dt>
+                                     <dd>
+                                         <strong>Mexico City Office</strong>
+                                         <p>Campeche 410, Hipódromo Condesa, Cuauhtémoc, C.P 06170 Ciudad De México, México</p>                                        
+                                         <p>TEL:(52) 55-5062-0870</p>
+                                     </dd>
+                                 </dl>
+                             </li>
+                         </ul>
+                     
+                         <button type="button" class="collapsible" onclick="collapse(this);">
+                             Europe</button>
+                     
+                             <ul class="content">
+                                 <li>
+                                     <dl>
+                                         <dt>Russia, Moscow</dt>
+                                         <dd>
+                                             <strong>LLC. "MAYEKAWA RUS"</strong>
+                                             <p>3Rd Yamskogo Polya Str., 2, Bld. 24, Floor 1, Premises I, Room 12A, 125124, Moscow, Russia</p>                                        
+                                             <p>TEL:(7) 499-230-01-76</p>
+                                         </dd>
+                                     </dl>
+                                 </li>
+                     
+                                 <li>
+                                     <dl>
+                                         <dt>Belguim, Brussels</dt>
+                                         <dd>
+                                             <strong>N.V. MAYEKAWA EUROPE S.A.</strong>
+                                             <p>Leuvensesteenweg 605 1930 Zaventem, Belgium</p>                                        
+                                             <p>TEL:(32) 2-757-9075</p>
+                                         </dd>
+                                     </dl>
+                                 </li>
+                     
+                                 <li>
+                                     <dl>
+                                         <dt>Germany, Sassenberg</dt>
+                                         <dd>
+                                             <strong>MAYEKAWA DEUTSCHLAND GmbH</strong>
+                                             <p>Zum Buckesch 7A, 48336 Sassenberg, Germany</p>                                        
+                                             <p>TEL:(49) 5426-9059224</p>
+                                         </dd>
+                                     </dl>
+                                 </li>
+                             </ul>
+                     
+                             <button type="button" class="collapsible" onclick="collapse(this);">
+                                 Middle East</button>
+                     
+                                 
+                                 <ul class="content">
+                                     <li>
+                                         <dl>
+                                             <dt>Saudi Arabia, AI Khobar</dt>
+                                             <dd>
+                                                 <strong>N.V.MAYEKAWA EUROPE S.A. AL KHOBAR BRANCH</strong>
+                                                 <p>Custodian of The Two Holy Mosques Road,Al Khobar City, Kingdom of Saudi Arabia</p>                                        
+                                                 <p>TEL:(966) 13-898-1404</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                                     <li>
+                                         <dl>
+                                             <dt>U.A.E, Dubai</dt>
+                                             <dd>
+                                                 <strong>MAYEKAWA MIDDLE EAST FZCO</strong>
+                                                 <p>P.O.BOX 61349, PBU: RA08-UC05, Jebel AliFreeZone, Dubai, U.A.E.</p>                                        
+                                                 <p>TEL:(971) 4-888-6363</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                                     <li>
+                                         <dl>
+                                             <dt>Turkey, Istanbul</dt>
+                                             <dd>
+                                                 <strong>MAYEKAWA TURKEY SOGUTMA SANAYI VE TICARET LIMITED SIRKETI</strong>
+                                                 <p>Istanbul Dunya Ticaret Merkezi A-2 Blok Kat 10 NO:325 Yesilkoy 34149, Istanbul, Turkey</p>                                        
+                                                 <p>TEL:(90) 212-4653631</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                                 </ul>
+                     
+                             <button type="button" class="collapsible" onclick="collapse(this);">
+                                 Africa</button>
+                                 <ul class="content">
+                                     <li>
+                                         <dl>
+                                             <dt>South Africa,Cape Town</dt>
+                                             <dd>
+                                                 <strong>
+                                                     MAYEKAWA SOUTH AFRICA LTD</strong>
+                                                 <p>West End, Unit 3 Prime Park, Printers Way, Montague Gardens 7441, South Africa</p>                                        
+                                                 <p>TEL:(27) 21-551-1434</p>
+                                             </dd>
+                                         </dl>
+                                     </li>
+                                 </ul>
+                   </div>
+                </div>
+                </div>
+
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+        
+    </div>
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/swiper.min.js"></script>
+    <script src="../common/js/aos.js"></script>
+
+    <script src="../common/js/common.js"></script>
+    <script src="./js/sub1_4.js"></script>
+    <script>AOS.init({easing: 'ease-in-out-sine'});</script>
+    
+
+
+
+</body>
+</html>

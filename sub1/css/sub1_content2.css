@@ -1,0 +1,322 @@
+
+.content_area{width: 100%; margin: 0 auto;}
+
+.history {width: 1400px; margin: 0 auto;  text-align: end; margin-bottom: 150px;}
+
+.content_area .historyNav{
+  width: max-content; margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.content_area .navOn{
+    position: fixed; width: 100%;
+    z-index:60; left:0; top: 0;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    border-top: 0px
+}
+.content_area .historyNav ul li a.spy{
+    color: #050D1B; 
+    border-radius: 50px;
+}
+
+.content_area .historyNav ul{
+  width: 1200px; margin: 0 auto;
+  overflow: hidden;
+}
+.content_area .historyNav ul li{
+  width: 20%; margin: 0 auto;
+  float: left;
+  text-align: center;
+  font-size: 1.56rem;
+  font-family:"Montserrat";
+  font-weight: 500;
+}
+.content_area .historyNav ul li a{
+  padding: 15px 20px;
+  color: #ccc;
+  position: relative;
+}
+.content_area .historyNav ul li a:hover{
+  background: #fff;
+  color: #050D1B;
+}
+.content_area .historyNav ul li a::after{
+  content: ''; display: block;
+  width: 0; height: 3px;
+  background: #050D1B;
+  position: absolute; left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  transition: all .3s ease;
+} 
+.content_area .historyNav ul li a:hover::after{
+  content: ''; display: block;
+  width: 100%; height: 3px;
+  background: #050D1B;
+  position: absolute; left: 50%; bottom: 0;
+  transform: translateX(-50%);
+} 
+
+.text{position: fixed; right:0; top: 0;
+  font-size: 50px; z-index: 100}
+
+
+
+.history ul li .his_1979{margin-bottom: 150px;}
+
+.history ul{width: 800px;
+  position: relative ; 
+  left: 750px; top: -58px;
+}
+.history span{
+  font-family:"Montserrat";
+  font-size: 3.13rem;
+  font-weight: 700;
+  display: block;
+  width: 500px;
+}
+
+.history span::before{
+  content: ''; display: block;
+  width: 170px; height: 2px;
+  background: #ccc;
+  position: relative; 
+  left: 550px; top: 40px;
+}
+
+
+/* history list */
+.history ul li dl{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.history ul li dl dt{
+  font-family:"Montserrat";
+  font-size: 1.56rem;
+  font-weight: 700;
+  color: #050D1B;
+  text-align: center;
+  display: block;
+  width: 50px;
+  padding-top: 6px;
+}
+.history ul li dl dt::after{
+  content: ''; display: block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #E8E8E8;
+  position: relative; left: 56px; bottom: 20px;
+}
+.history ul li dl dd{
+  font-size: 1.38rem;
+  line-height: 2.5rem;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.img1{
+  margin: 50px auto;
+  background: url(../images/content2/img1.jpg);
+  width: 100%;
+  height: 540px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-radius: 50px;
+  backdrop-filter: brightness(30%);
+}
+
+.img2{
+  margin: 50px auto;
+  background: url(../images/content2/img2.jpg);
+  width: 100%;
+  height: 540px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-radius: 50px;
+}
+
+.img3{
+  margin: 50px auto;
+  background: url(../images/content2/img3.jpg);
+  width: 100%;
+  height: 540px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-radius: 50px;
+}
+
+.img4{
+  margin: 50px auto;
+  background: url(../images/content2/img4.jpg);
+  width: 100%;
+  height: 540px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-radius: 50px;
+}
+
+.img5{
+  margin: 50px auto;
+  background: url(../images/content2/img5.jpg);
+  width: 100%;
+  height: 540px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-radius: 50px;
+}
+
+.history p{
+  width: 100%;
+  font-size: 3.5rem; 
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+}
+
+
+
+/* 연혁 */
+
+.content_area{width: 100%;}
+.content_area .content_inner{position: relative; width: 1220px; margin:  0 auto; overflow: hidden;}
+.content_area .content_inner::before{
+    content: ""; 
+    display: block;
+    width: 1px; 
+    height: 100%; 
+    position: absolute;
+    left: 50%; 
+    top: 80px; 
+    background: #050D1B;}
+
+.content_area .content_inner .contentImg{
+  background: url(../images/content2/img1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 10;
+}
+.content_area ul{margin: 150px 0;}
+.content_area li{
+  overflow: hidden;
+display: flex; justify-content: flex-end; } 
+.content_area li:nth-child(odd){flex-direction: row-reverse;}
+.content_area li dl{width:550px;}
+.content_area li dt{text-align: center; font-size: 2rem; font-weight: 700; margin-bottom: 50px; position: relative;}
+.content_area li dd{line-height: 2rem; font-weight: 500; font-size: 1.1rem;}
+
+.content_area li:nth-child(odd) dt::before{
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: #050D1B;
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    right: -67px;
+    }
+.content_area li:nth-child(even) dt::before{
+    content: ""; display: block;
+    width: 50px; height: 50px; 
+    background: url(../images/content2/haitai.png);
+    position: absolute;top: 0; left: -85px; }
+
+
+  .content_area li:nth-child(odd) dd{
+    text-align: right;
+  }  
+
+/* .content_area li:nth-child(odd) dd::after{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #E8E8E8;
+  position: relative;
+  left: 56px;
+  bottom: 20px;
+} */
+
+.content_area li:nth-child(odd) dt::after{content: ""; display: block; width: 150px; height: 2px;
+    border-bottom: 4px dotted #ccc; position: absolute; top: 22px; right:0; }
+.content_area li:nth-child(even) dt::after{content: ""; display: block; width: 150px; height: 2px;
+    border-bottom: 4px dotted #ccc; position: absolute; left: 0px; top: 22px; }
+
+.content_area li span{
+  font-weight: 800;
+  color: rgb(126, 143, 228);
+}
+#content .his_navbox{ width: 100%;}
+#content .his_navbox.navOn { 
+  width: 100%; 
+  position:fixed; top:0; left:0; 
+  z-index: 50; 
+  background: #fff;
+  margin: 0;
+  border: 0;
+}
+#content .his_navbox.navOn a{
+
+ }
+    
+#content .his_navbox.navOn ul{
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+  }
+
+#content .his_navbox ul{
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+#content .his_navbox ul li{
+  font-size: 1.5rem; 
+  font-weight: 500;
+  transition: all .3s ease-out;
+}
+#content .his_navbox ul li:hover{
+  background: #050D1B;
+  transition: all .3s ease-out;
+}
+#content .his_navbox ul li:hover a{
+  color: #fff;
+}
+
+#content .his_navbox ul li a{
+  padding: 10px 50px ;
+  color: #ccc; 
+  text-align: center;
+}
+
+#content .his_navbox ul li a.spy{
+  background:#050D1B;
+  color: #fff;
+}

@@ -1,0 +1,75 @@
+
+.contact{width: 1400px; margin: 30px auto 250px;}
+
+.mid{padding: 0 20px 50px; border-bottom: 2px solid #050D1B; margin-top: 150px;}
+.mid p{font-size: 1.3rem; line-height: 2.5rem;}
+
+
+#contact-form .inquire div{padding: 40px 20px; border-bottom: 1px solid #f4f4f4;}
+#contact-form .inquire span{color: #E40214;}
+.contact label{font-size: 1.5rem; font-weight: 400;
+      width: 200px;display: block; margin-bottom: 20px;
+      transform: translateX(40px);}
+
+.contact input, .contact textarea{padding: 15px ; width: 90%; font-size: 1.5rem;
+      border: 0; color: #333; transform: translateX(40px);
+      border-radius: 10px; outline: none; border: 1px solid #ccc;
+      transition: all .5s; font-family: sans-serif;}
+
+.contact input:focus, .contact textarea:focus{box-shadow: 1px 1px 15px 1px rgba(0,0,0,.1); }    
+
+.contact textarea{height: 200px;}
+.contact button{padding: 15px 50px;background: #fff;
+   color: #E40214; font-size: 1.3rem; border-radius: 50px;
+   border: 1px solid #E40214; margin: 150px auto 0;display: block; cursor: pointer;}
+.contact button:hover{background: #E40214; color: #fff; transition: all .5s ease-out;}
+
+
+
+/* 개인정보 영역 */
+.contact .agree{border: 1px solid #f4f4f4; margin-top: 50px; padding: 50px;}
+.contact .agree dl dt{font-size: 1.6rem; font-weight: 500;}
+.contact .agree dl dd{font-size: 1.2rem; font-weight: 300; line-height: 2.2rem; margin-top:30px;}
+.contact .agree p{font-size: 1.3rem;font-weight: 500; margin-top: 50px; text-align: center;}
+.contact .agree span{color: #E40214; font-weight: 400;}
+
+
+/* 동의 설정 */
+.consent-checkbox {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+.consent-checkbox input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+}
+  
+.consent-checkbox label {
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    width: max-content;
+    margin-bottom: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+.consent-checkbox label::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    display: block;
+}
+
+
+.consent-checkbox input[type="checkbox"]:checked + label::before {
+    background: url(../images/content1/checked.png) 50% 50% no-repeat #E40214;
+    border-color: #E40214;
+}
+
+  

@@ -1,0 +1,131 @@
+@charset "utf-8";
+.content_area{height: 100%; width: 2000px;margin-bottom: 150px;}
+.content_area .mainimg1{
+  background: url(../images/content1/back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative; 
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+
+.content_area .mainimg1{
+  img{width: 600px;height: 650px;}
+  dl{width: 700px;}
+  dl dt{
+      font-size: 5.5rem; 
+      line-height: 6.5rem; 
+      color: #fff; 
+      font-weight: 800;
+      font-family: "Bruno Ace", serif;
+      width: 550px;
+      padding-bottom: 0;
+  }
+  dl dt::after{
+      content: '';
+      width: 470px;
+      height: 1px;
+      background: #aaa;
+      position: absolute;
+      top: 510px;
+      left: 260px;
+  }  
+
+  dl dt>span{color: #aaa;}
+  dl dd:nth-of-type(1){
+      font-size: 2.5rem; 
+      line-height: 3rem; 
+      color: #E40214; 
+      font-weight: 400;
+      margin-top: 40px;
+      font-family: "Bruno Ace", serif;
+    }
+    dl dd:nth-of-type(2) {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #aaa;
+      margin-top: 20px;
+      width: 100%;
+    }
+}
+
+.content_area .maintitle{margin: 200px 0 80px; position: relative;}
+.content_area .maintitle::after{
+  content: '';
+  position: absolute;
+  width: 700px;
+  height: 2px;
+  background: #050D1B;
+  bottom: 120px;
+  right: 5px;
+}
+.content_area p{
+  font-size: 4rem;
+  color: #ccc;
+  font-weight: 800;
+  line-height: 5rem;
+  font-family: "Bruno Ace", serif;}
+.content_area p>span{color: #050D1B;font-weight: 700;}
+.content_area2{width: 1400px; margin: 0 auto;}
+
+.bottomArea{display: flex; justify-content: space-between; margin: 0 auto;}
+.bottomArea dl>ul{list-style-type: disc; margin: 0 20px;}
+
+/* oil pump 설명 */
+.content_area dl{display: flex; gap: 30px;
+  justify-content: center;
+  flex-direction: column;}
+.content_area dl dt{
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 30px;
+  width: 470px;
+  border-bottom: 1px solid #050D1B;}
+.content_area dl dd{font-size: 1.5rem; font-weight: 500;}
+
+.content_area3>ul{display: flex;flex-direction: column;margin-top: 50px;}
+.content_area3>ul>li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  gap: 120px;
+}
+
+.content_area ul li>dl>ul{list-style-type: disc; margin: 0 20px;}
+
+
+/* oil pump 갤러리 */
+.gallery_wrap{ position:relative;width:50%; border-radius: 20px;
+ overflow:hidden;}
+.gallery{position:relative;left:0; top:0; overflow:hidden; height:100%;}
+.gallery ul li{  list-style-type: disc;}
+.gallery img{width: 100%;}
+.gallery .link1,.gallery .link2,.gallery .link3,.gallery .link4,.gallery .link5{display:none}
+.dock{width:330px; position:absolute; left:450px; top:380px;}
+
+.dock span.mbutton{ margin-right:15px; cursor:pointer; 
+  display:block; float:left; width:15px; height:15px;}
+
+.dock .ps{ margin-right:15px; margin-top: -5px; cursor:pointer; 
+  display:block; float:left; width:25px; height:25px;}
+.gallery_wrap .btn{
+  display: block;
+  position: absolute;
+  top: 210px;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #ccc;
+  transition: all .5s ease-out;
+  }
+.gallery_wrap .btn:hover{color: #050D1B; transition: all .5s ease-out;}
+.gallery_wrap .btnLeft{left:30px;}
+.gallery_wrap .btnRight{right:30px}
+
+img{border:0; vertical-align:top;}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+.wrap{width: 100%; overflow: hidden;}
+/* visual공통 */
+.visual{width: 2000px; height: 450px; overflow: hidden;
+    background: #ccc; position: relative; left: 50%; top: 0; transform: translateX(-50%);}
+.visual span{font-size: 35px; color: #fff; position: absolute; width: 100%;
+   text-align: center; left: 0; top: 225px; font-weight: 500;}
+.visual img {animation: ani 20s linear infinite;}
+@keyframes ani {
+    from { transform: scale(1); }
+    to { transform: scale(2); }
+}
+  
+/* sub_nav공통 */
+.sub_nav{width: 1400px; border: 1px solid #ccc; margin: 30px auto 0; border-radius: 50px;}
+.sub_nav ul{width: 1400px; margin: 0 auto; display: flex;}
+.sub_nav ul li{width: 25%; text-align: center; box-sizing: border-box;}
+.sub_nav ul li a{border-radius: 50px; margin: 7px; display: block;
+    font-size: 1.2rem; font-weight:600; padding: 20px 0; color: #050D1B; transition: all .5s ease-out;}
+.sub_nav ul li a:hover{color: #fff; background: #E40214;}
+.sub_nav ul li a.current{color: #fff; background: #E40214;}
+
+
+/* title_area공통 */
+
+.title_area{width: 100%; max-width: 1400px; margin: 0 auto; position: relative;}
+.title_area .line_map a{display: inline; font-weight: 400;}
+.title_area .line_map{position: absolute; left: 50%; top: -275px; color: #fff; text-align: center; width: 100%; transform: translateX(-50%);}
+.title_area h2{font-size: 60px; font-weight: 700; text-align: center;
+            padding: 40px 0 60px; position: relative;}
+.title_area h2::before{content: ""; border: 0.5px solid #E40214;
+    width: 100px; position: absolute; left: 50%; top: 25px; transform: translateX(-50%);}
+.title_area p{font-size: 1.2rem; text-align: center;
+padding-bottom: 220px;}
+.title_area span{font-size: 1.8rem; text-align: center; display: block;
+padding: 220px 0 0; color: #E40214;}

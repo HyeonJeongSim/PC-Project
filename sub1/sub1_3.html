@@ -1,0 +1,198 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+
+    // $userid = $_SESSION['userid'];
+    // $username = $_SESSION['username'];
+    // $usernick = $_SESSION['usernick'];
+    // $userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인증서 | 한국마이콤</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content3.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="./common/images/favicon.ico">
+
+    <link rel="stylesheet" href="./common/css/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="gnb">글로벌네비게이션 바로가기</a>
+    </div>
+   
+    <div class="wrap">
+
+        <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/sub1_back.jpg" alt="">
+            <span>기업소개</span>
+        </div>
+
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub1_1.html">경영이념</a></li>
+                <li><a href="./sub1_2.html">회사연혁</a></li>
+                <li><a class= "current" href="./sub1_3.html">인증서</a></li>
+                <li><a href="./sub1_4.html">사업장소개</a></li>
+                <li><a href="./sub1_5.html">오시는 길</a></li>
+            </ul>
+        </div>
+
+      
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <a href="../index.html"><i class="fa-solid fa-house"></i><span class="hidden">home</span></a>&nbsp;&nbsp;
+                    <i class="fa-solid fa-angle-right" style="color: #ccc;"></i>&nbsp;&nbsp;기업소개&nbsp;&nbsp;<i class="fa-solid fa-angle-right" style="color: #ccc;"></i>&nbsp;&nbsp;<a href="./sub1_3.html"><strong>인증서</strong></a>
+                </div>
+                <span data-aos="zoom-in">CERTIFICATION</span>
+                <h2 data-aos="zoom-in">인증서</h2>
+                <p data-aos="zoom-in">한국마이콤의 기술력과 품질을 입증하는 <br>
+                    국내외 인증서들을 확인하실 수 있습니다.</p>
+            </div>
+    
+            <section class="content_area"> 
+                <div class="top" data-aos="fade-up">
+                    <img src="./images/content3/title2.jpg" alt="">
+                    <dl data-aos="fade-left">
+                        <dt><h3>정밀 온도 제어 기술의 신뢰를 보증하는 인증서</h3></dt>
+                        <dd>한국마이콤은 품질과 기술력의 가치를 인증받아 왔습니다. 글로벌 표준을 준수하며 획득한 다양한 인증서는 고객들에게 신뢰를 제공하고, 우리의 냉동기 엔지니어링 기술력을 증명합니다. 식품, 음료, 화학, 물류 등 다양한 산업군에서 요구되는 최고 수준의 품질과 안전성을 보장하며, 지속 가능한 미래를 위한 기술 개발에 앞장섭니다. 한국마이콤의 인증서는 우리가 걸어온 길과 앞으로 나아갈 방향을 상징합니다.</dd>
+                        <dd><i class="bi bi-award-fill"></i></dd>
+                    </dl>
+                </div>
+
+
+                <!-- 하단 인증서 -->
+             
+                <div class="pdf_grid" data-aos="fade-up">
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi1.pdf">
+                            <img src="./images/content3/certi1.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">사업자등록증</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi2.pdf">
+                            <img src="./images/content3/certi2.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">ASME U STAMP</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi3.pdf">
+                            <img src="./images/content3/certi3.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">SEL License</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi4.pdf">
+                            <img src="./images/content3/certi4.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">National Board Certification</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi5.pdf">
+                            <img src="./images/content3/certi5.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">ISO안전보건</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi6.pdf">
+                            <img src="./images/content3/certi6.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">특정설비제조 등록증(히트펌프)</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi7.pdf">
+                            <img src="./images/content3/certi7.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">외국용기(냉동기,특정설비)</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi8.pdf">
+                            <img src="./images/content3/certi8.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">신재생에너지 전문기업</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <div class="pdf_item">
+                            <a href="./images/content3/certi9.pdf">
+                            <img src="./images/content3/certi9.jpg" alt="PDF 미리보기 1">
+                                <div class="pdf_info">
+                                    <p class="title">ISO 품질경영</p>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                </div>
+
+            </section>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+    </div>
+    <script src="../common/js/aos.js"></script>
+    <script> AOS.init({easing: 'ease-in-out-sine'});</script>
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    
+    <script src="./js/swiper.min.js"></script>
+    
+    <script src="../common/js/common.js"></script>
+    <script src="./js/sub1_3.js"></script>
+
+
+
+</body>
+</html>

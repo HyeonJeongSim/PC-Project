@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.content_area .mainimg1{
+    background: url(../images/content1/back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+  }
+
+
+.content_area .mainimg1{
+    img{width: 550px;height: 700px;}
+    dl{width: 700px;}
+    dl dt{
+        font-size: 5.5rem; 
+        line-height: 6.5rem; 
+        color: #fff; 
+        font-weight: 800;
+        font-family: "Bruno Ace", serif;
+    }
+    dl dt::after{
+        content: '';
+        width: 470px;
+        height: 1px;
+        background: #aaa;
+        position: absolute;
+        top: 565px;
+        left: 240px;
+    }  
+
+    dl dt>span{color: #aaa;}
+    dl dd:nth-of-type(1){
+        font-size: 2.5rem; 
+        line-height: 3rem; 
+        color: #E40214; 
+        font-weight: 400;
+        margin-top: 40px;
+        font-family: "Bruno Ace", serif;
+      }
+      dl dd:nth-of-type(2) {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #aaa;
+        margin-top: 20px;
+        width: 100%;
+      }
+}
+
+
+
+/* Product */
+.product .maintitle{margin: 200px 0 80px; position: relative;}
+.product .maintitle::after{
+  content: '';
+  position: absolute;
+  width: 700px;
+  height: 2px;
+  background: #050D1B;
+  bottom: 120px;
+  right: 5px;
+}
+
+.product{
+  width: 1400px; 
+  height: 100%; 
+  margin: 0 auto 150px;  
+}
+.product ul{display: flex;flex-direction: column; gap: 50px;}
+.product>ul>li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 120px;
+}
+.product>ul>li:nth-of-type(2){flex-direction: row-reverse;}
+.product dl{display: flex; gap: 30px;flex-direction: column;}
+.product dl dt{
+  font-size: 2.5rem; 
+  font-weight: 600; padding-bottom: 30px;
+  border-bottom: 1px solid #050D1B;}
+.product dl dd{font-size: 1.5rem; font-weight: 500;}
+
+.product ul li > dl > ul{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: disc;
+  margin: 0 20px;
+  }
+
+.contlist ul li img{
+  transition: all .5s ease-out;
+  width: 50%;
+}
+
+.product p{
+  font-size: 4rem;
+  color: #ccc;
+  font-weight: 800;
+  line-height: 5rem;
+  font-family: "Bruno Ace", serif;}
+.product p>span, .compoundstage p>span{color: #050D1B;font-weight: 700;}
+
+/* Hover */
+.tabs a.tab:hover{
+  border: 1px solid #E40214;
+  background: #fff; 
+  color: #E40214;
+}
+.contlist ul li:hover img{
+  transform: scale(.97); 
+  transition: all .5s ease-out;
+}

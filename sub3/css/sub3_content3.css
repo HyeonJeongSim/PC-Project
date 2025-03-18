@@ -1,0 +1,29 @@
+.bottom{margin: 0 auto; margin: 150px 0 250px;}
+.bottom .bottom_wrap{display: flex; gap: 10px;}
+.bottom .bottom_wrap li:nth-child(even){margin-top: 50px;}
+
+.bottom .front{overflow: hidden;}
+.bottom .bottom_wrap .front img{border-radius: 20px;
+   transition: all .8s ease-out;}
+.bottom .bottom_wrap p{font-size: 1.8rem; 
+position: relative; bottom: 70px; left: 35px;
+color: #fff; font-weight: 500; transition: all .8s ease-out;}
+
+/* .bottom .flip {display: flex;} */
+.bottom .flip dl {
+   position: absolute; bottom: 120px;
+   text-align: center; margin-left: 43px;
+   color: #fff; opacity: 0;
+   transition: all .8s ease-out;}
+
+.bottom .bottom_wrap li:hover .flip dl{opacity: 1;}
+
+.bottom .flip dl dt{font-size: 4rem; font-weight:800; color: #ffffffe0;}
+.bottom .flip dl dd:nth-of-type(1){font-size: 1.7rem; padding: 20px 0; border-bottom: 2px solid #fff;font-weight: 500; }
+.bottom .flip dl dd:nth-of-type(2){font-size: 1.1rem; font-weight: 300; padding-top: 20px;}
+.bottom .flip dl dd{width: 250px;}
+
+.bottom .bottom_wrap li:hover img{filter: brightness(40%);}
+.bottom .bottom_wrap li:hover .front p{opacity: 0;}
+
+.bottom_wrap li{height: 510px;}

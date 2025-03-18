@@ -1,0 +1,87 @@
+.top{width: 1400px; margin: 0 auto 150px;}
+/* .top_wrap{width: 2000px; background: #050D1B url(../images/content3/back.jpg); padding: 150px 0; } */
+
+.top_wrap{background: linear-gradient(rgba(31, 31, 31, 0.74), rgba(44, 44, 44, 0.589)), url(../images/content3/back.jpg);
+ padding: 150px 0; width: 2000px; }
+
+
+.top_wrap dl{text-align: center; margin: 0 auto 100px; width: 1400px; color: #fff;}
+.top_wrap dl dt{font-size: 2.5rem; font-weight: 500;}
+.top_wrap dl dd{font-size: 1.3rem; width: 1000px;margin: 30px auto 0;}
+
+.top_wrap .swiper {
+  height: 100%;
+  width: 1400px; 
+  overflow: hidden;
+  margin: 0 auto; 
+  cursor: pointer; 
+  }
+.top_wrap .swiper ul{display: flex;z-index: 1;position: relative;}
+.top_wrap .swiper .swiper-slide{margin-top: 50px;}
+.top_wrap .swiper .swiper-slide img{border-radius: 10px; width: 430px;}
+
+
+.bottom_wrap{width: 1500px; padding: 150px 0 250px; margin: 0 auto;}
+.bottom_wrap .bottom1 dl{text-align: center; margin: 0 auto 100px; width: 1400px;}
+.bottom_wrap .bottom1 dl dt{font-size: 2.5rem; font-weight: 500;}
+.bottom_wrap .bottom1 dl dd{font-size: 1.3rem; width: 1000px;margin: 30px auto 0;}
+
+.bottom_wrap .bottom2 ul {display: flex; justify-content: center; text-align: center; gap: 30px;}
+.bottom_wrap .bottom2 ul li{width: 230px; border: 1px solid #ccc; border-radius: 20px; padding: 20px 50px;}
+.bottom_wrap .bottom2 ul li>dl>dt{font-size: 1.2rem;font-weight: 500;}
+.bottom_wrap .bottom2 ul li>dl>dt span{color: #E40214;font-weight: 400;}
+.bottom_wrap .bottom2 ul li>dl>dd{font-size: 1.1rem; font-weight: 300; color: #333; padding-top: 20px;}
+.bottom_wrap .bottom2 ul li>dl>dd:nth-last-of-type(2){font-size: 2rem; padding: 0 0 20px;}
+
+.bottom_wrap .img_slide{position: relative;display: flex;gap: 50px;}
+.bottom_wrap .img_slide ul{display: flex; margin: 200px 0 0; gap: 50px;}
+.bottom_wrap .img_slide ul img{border: 1px solid #ccc; border-radius: 20px;}
+
+
+.button_box{
+ width: 80%;
+ font-size: 4rem;
+ display: flex;
+ margin: 0 auto;
+ justify-content: space-between;
+ position: relative;
+ top: -270px; left: 0;
+}
+
+/* Pagination */
+.swiper-pagination {
+ position: relative;
+ margin-top: 20px;
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+}
+
+/* Pagination 버튼 */
+.custom-pagination-bullet {
+ width: 8px;
+ height: 8px;
+ background: #ccc;
+ border-radius: 50%;
+ opacity: 1;
+ transition: all 0.3s ease;
+}
+
+/* 활성화된 Pagination 버튼 */
+.custom-pagination-bullet.swiper-pagination-bullet-active {
+ width: 50px;
+ background: #ffffff;
+ border-radius: 10px;
+}
+
+/* Pagination 버튼 호버 */
+.custom-pagination-bullet:hover {
+ background: #fff;
+}
+
+/* Navigation 버튼 클릭 시 Pagination 효과 */
+.swiper-button-next:active ~ .swiper-pagination .swiper-pagination-bullet-active,
+.swiper-button-prev:active ~ .swiper-pagination .swiper-pagination-bullet-active {
+ width: 40px;
+ background: #fff;
+}

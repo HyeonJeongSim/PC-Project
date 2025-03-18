@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* 오시는길 */
+
+*{margin: 0; padding: 0;}
+#content .content_area{width: 2000px;position: relative; left: 50%; top: 0;transform: translateX(-50%);}
+
+/* 지도 영역 */
+#content .content_area .map_box{width: 1400px; height: 600px;margin: 0 auto;}
+#map{width: 1400px; height: 600px;}
+
+/* #mapchangwon{width: 700px; height: 500px;margin: 0 auto;} */
+
+
+/* 지도 텍스트 영역 */
+.map_info{width: 1210px; margin: 0 auto; }
+.map_info .info{display: flex; align-items: flex-end; margin: 100px 100px;}
+.map_info .info p{font-size: 2.5rem; font-weight: 600; width: 150px;}
+.map_info .info span{color: #E40214;  margin-left: 20px; width: 90px;}
+.map_info .info hr {
+    border: none;
+    border-top: 1.5px solid #E40214;
+    margin: 20px 0;}
+
+.map_info dl{gap:20px ;width: 1010px; margin: 0 0 0 253px; display: grid;
+    grid-template-columns: 100px 1fr; }
+.map_info dl dt {color: #E40214;font-weight: 600; font-size: 1.3rem;}
+.map_info dl dd {font-size:1.2rem; margin-left: 40px;}
+.content_area .map_info dl dt, .map_info dl dd {border-bottom: 1px solid #ccc;width: 600px; padding-bottom: 20px;} 
+
+/* 하단 border */
+
+.map_info dd p {margin-bottom: 10px; width: 700px;}
+.map_info dd p:nth-of-type(2) strong{color: #49A24B;}
+.map_info dd p:nth-of-type(3) strong{padding-left: 40px; color: #0554AE;}
+.map_info dd span {padding-left: 50px;}
+.map_info dd p:nth-of-type(1) span{padding-left: 69px;}
+
+.map_info .option{position: absolute; top: 450px; left: 50%;
+    transform: translateX(-50%);}
+.map_info .option a>span{font-size: 1.2rem; font-weight: 500;
+    width: 220px;
+    height: 45px;
+    background: #050D1B; color: #fff;
+    border-radius: 40px;
+    padding-top: 15px;
+    background: #fff; color: #050D1B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: block; margin-top: 40px;
+    transition: all .5s ease-out;
+text-align: center;}
+.map_info .option a>span:hover{background: #E40214;color: #fff;}
+
+
+/* 지사 영역 */
+.bottom{width: 1400px; margin: 250px auto 220px;}
+.bottom ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* 자식 요소들을 랩핑하여 나란히 배치 */
+    gap: 40px; /* li 항목 간 간격 */
+}
+
+.bottom ul dl{width: 600px; height: 270px;
+                padding: 50px 0 0 80px; box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+            transition: all .5s ease-out;}
+.bottom ul dl dt{font-size: 2.5rem; font-weight: 600; color:#E40214; border-bottom: 1px solid #050D1B;
+    width: 520px; padding-bottom: 30px;} /* 위, 왼쪽 여백 50px 고려한 border 크기 550px */
+
+.bottom ul dl:hover dt{border-bottom: 1px solid #E40214;}
+.bottom ul dl dd{font-size: 1.2rem; color: #050D1B; line-height: 2rem; padding-top: 30px;}
+.bottom ul dl span{color: #E40214; font-size: 1rem; font-weight: 400; padding-left: 20px;}
+.bottom ul dl i{font-size: 2.3rem; position: absolute; bottom: 15px; right: 90px; opacity: 0; transition: all .5s ease-out;}
+.bottom ul li:hover dl i{opacity: 1; bottom: 70px;}
+.bottom li:hover dl{box-shadow: 0 0 40px #050d1b1c;}
+
+
+/* border효과 */
+.bottom ul li {position: relative;}
+.bottom ul li::before,.bottom ul li::after,.bottom li dl::before,.bottom li dl::after {
+    content: '';position: absolute;background: #E40214;transition: all 0.3s ease;}
+
+/* 상단 border (왼쪽 -> 오른쪽) */
+.bottom li::before {left: 0;top: 0;width: 0;height: 2px;}
+
+/* 하단 border (오른쪽 -> 왼쪽) */
+.bottom li::after {right: 0;bottom: 0;width: 0;height: 2px;}
+
+/* 우측 border (위 -> 아래) */
+.bottom li dl::before {right: 0;top: 0;width: 2px;height: 0;}
+
+/* 좌측 border (아래 -> 위) */
+.bottom li dl::after {left: 0;bottom: 0; width: 2px;height: 0;}
+
+/* Hover 효과 */
+.bottom li:hover::before,
+.bottom li:hover::after {width: 100%;}
+
+.bottom li:hover dl::before,
+.bottom li:hover dl::after {height: 100%;}
+
+
+
+/* modal pop-up */
+
+.modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .3;display: none;}
+#content .popup{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 900px; height: 600px; background: #fff; box-shadow: 1px 3px 7px 0px #666;
+    z-index: 60; display:none; border-radius: 10px;}
+#content .popup img{width: 700px; height: 400px;
+    position: absolute; top: 150px; left: 50%; transform: translateX(-50%);
+border-radius: 10px; border: 1px solid #ccc;}
+#content .popup dl{width: 94%; margin:40px 3%; text-align: center;}
+#content .popup dt{font-size: 2rem; font-weight: bold; margin-bottom: 10px; color: #050D1B;}
+#content .popup dd{color: #050D1B;}
+#content .popup .close_btn{position: absolute; top: 35px; right: 35px; 
+display: block; text-indent: -999px; overflow: hidden; width: 20px;
+height: 20px; padding: 9px 9px; background: url(../images/content5/close.svg) no-repeat;
+transition: all .3s ease-out;}
+#content .popup .close_btn:hover{transform: scale(1.2); background: url(../images/content5/close2.svg);}

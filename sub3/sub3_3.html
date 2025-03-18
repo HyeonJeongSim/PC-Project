@@ -1,0 +1,155 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+
+    // $userid = $_SESSION['userid'];
+    // $username = $_SESSION['username'];
+    // $usernick = $_SESSION['usernick'];
+    // $userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화학 | 한국마이콤</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="../sub3/css/sub3_content3.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="./common/images/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="gnb">글로벌네비게이션 바로가기</a>
+    </div>
+   
+    <div class="wrap">
+        
+        <? include "../common/sub_header.html" ?>
+
+
+        <div class="visual">
+            <img src="./images/content3/sub3_title.jpg" alt="">
+            <span>사업분야</span>
+        </div>
+
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub3_1.html">식품 · 음료</a></li>
+                <li><a href="./sub3_2.html">레저 · 스포츠</a></li>
+                <li><a class= "current" href="./sub3_3.html">화학</a></li>
+                <li><a href="./sub3_4.html">선박</a></li>
+            </ul>
+        </div>
+        <div class="title_area">
+            <div class="line_map">
+                <a href="../index.html"><i class="fa-solid fa-house"></i><span class="hidden">home</span></a>&nbsp;&nbsp;
+                <i class="fa-solid fa-angle-right" style="color: #fff;">
+                </i>&nbsp;&nbsp;사업분야&nbsp;&nbsp;
+                <i class="fa-solid fa-angle-right" style="color: #fff;"></i>
+                &nbsp;&nbsp;<a href="./sub3_1.html"><strong>화학</strong></a>
+            </div>
+            <span data-aos="zoom-in">CHEMICAL</span>
+            <h2 data-aos="zoom-in">화학</h2>
+            <p data-aos="zoom-in">정밀하고 안정적인 냉동 솔루션으로<br>화학 산업의 혁신을 선도합니다.</p>
+        </div>
+
+        <article id="content">
+            <div class="top" data-aos="fade-up">
+                <img src="./images/content3/title2.jpg" alt="">
+                <dl data-aos="fade-left">
+                    <dt>고도화된 압축 기술로 안정적인 공정을 실현합니다</dt>
+                    <dd>한국마이콤 냉동기 엔지니어링의 식품, 음료 사업부는 최적의 온도 관리 솔루션을 제공합니다. 원자재 입고부터 완제품 출하까지 전 공정에 정밀한 온도 제어 기술을 적용하여 식품의 품질과 안전을 보장합니다. 히트 펌프, 에어 커튼 등 첨단 열 엔지니어링 기술을 통해 에너지 효율성을 높이고, 고객사의 생산성을 향상시킵니다. 다양한 식품 가공 공정에 맞는 맞춤형 냉동 솔루션으로 식품 산업의 혁신을 선도합니다.</dd>
+                    <dd><i class="fa-solid fa-industry"></i></dd>
+                </dl>
+            </div>
+
+            <div class="bottom">
+                <ul class="bottom_wrap">
+                   <li data-aos="fade-up">
+                     <div class="front">
+                        <img src="./images/content3/chem1.jpg" alt="">
+                        <p>일반화학 플랜트</p>
+                     </div>
+                    
+                     <div class="flip">
+                        <dl>
+                            <dt>1</dt>
+                            <dd>일반화학 플랜트</dd>
+                            <dd>반응기, 열교환기, 고압 압축기와 같은 주요 공정 장비로 생산성을 극대화하고, 산업 표준을 준수하는 맞춤형 솔루션을 제공합니다.</dd>
+                        </dl>
+                     </div>
+                   </li>
+
+                   <li data-aos="fade-up" data-aos-delay="100">
+                    <div class="front">
+                       <img src="./images/content3/chem2.jpg" alt="">
+                       <p>석유 정제 플랜트</p>
+                   </div>
+                   
+                    <div class="flip">
+                       <dl>
+                           <dt>2</dt>
+                           <dd>석유 정제 플랜트</dd>
+                           <dd>정유 공정에 특화된 고성능 터보 압축기와 열교환기 등 핵심 설비를 공급하며, 안정적이고 효율적인 원유 정제 프로세스를 구축합니다.</dd>
+                       </dl>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-delay="200">
+                    <div class="front">
+                       <img src="./images/content3/chem3.jpg" alt="">
+                       <p>석유 화학 플랜트</p>
+                   </div>
+                   
+                    <div class="flip">
+                       <dl>
+                           <dt>3</dt>
+                           <dd>석유 화학 플랜트</dd>
+                           <dd>에틸렌, 프로필렌, 벤젠 등 석유화학 제품 제조를 위한 고성능 공정 설비와 최적화된 공정 설계로 고효율 생산을 보장합니다.</dd>
+                       </dl>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-delay="300">
+                    <div class="front">
+                       <img src="./images/content3/chem4.jpg" alt="">
+                       <p>공업 가스 제조 플랜트</p>
+                   </div>
+                   
+                    <div class="flip">
+                       <dl>
+                           <dt>4</dt>
+                           <dd>공업 가스 제조 플랜트</dd>
+                           <dd>산업용 가스 제조 공정에 필수적인 저온 분리 장치와 고압 압축 기술로 고효율 에너지 설계와 안정적인 생산 환경을 구현합니다.</dd>
+                       </dl>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+    </div>
+
+    <script src="../common/js/aos.js"></script>
+    <script> AOS.init({easing: 'ease-in-out-sine'});</script>
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/common.js"></script>
+
+</body>
+</html>

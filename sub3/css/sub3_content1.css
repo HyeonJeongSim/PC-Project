@@ -1,0 +1,18 @@
+
+
+#content .bottom ul{ margin: 150px 0 45px;cursor: pointer;}
+#content .bottom img{border-radius: 20px; width: 550px;
+    height: 700px;border: 1px solid #ccc;}
+
+#content .bottom ul li dl{position: relative; top: -250px;
+    left: 0; padding: 0 45px;}
+#content .bottom ul li dl dt{font-size: 2rem; font-weight: 500; width: 400px;}
+#content .bottom ul li dl dt>span{font-size: 1.1rem; color: #E40214; font-weight: 400; margin-left: 10px;}
+#content .bottom ul li dl dd{width: 460px;
+    font-size: 1.2rem; font-weight: 400;
+    text-align: justify; padding-top: 30px; line-height: 2rem;}
+#content .swiper{width: 1400px;}
+#content .swiper .swiper-slide{width:550px;} 
+
+
+
