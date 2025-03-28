@@ -36,7 +36,7 @@
 				if($row[file_copied_0]){	//	첨부된 이미지가 있으면
 					$newsimg='./news/data/'.$row[file_copied_0];
 				}else{
-					$newstimg= './news/data/default.jpg';
+					$newsimg= './news/data/default.jpg';
 				}
 
 				echo "      
