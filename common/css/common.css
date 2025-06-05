@@ -367,7 +367,7 @@ img {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-  align-items: center;
+  align-items: flex-start;
 }
 .footer_btm p {
   margin-top: 50px;
@@ -449,9 +449,10 @@ img {
   color: #3b589e;
 }
 .sns li .KakaoTalk-logo {
+  padding-top: 4px;
   width: 28px;
   height: 28px;
-  background: url(../images/KakaoTalk-logo-white.svg) no-repeat center/contain;
+  background: url(../images/KakaoTalk-logo-white.svg) no-repeat center / contain;
 }
 .sns li .KakaoTalk-logo:hover {
   background-image: url(../images/KakaoTalk-logo-yellow.svg);
