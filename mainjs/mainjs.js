@@ -8,9 +8,8 @@ $(".btn1").css("background", "#ffffff5b"); //첫번째 불 키기
 $(".btn1").css("width", "200px"); //버튼의 너비 증가
 $(".btn1").addClass("on");
 
-$(".gallery .link1").fadeIn("fast"); //첫번째 이미지 보인다
+$(".gallery .link1").show(); //첫번째 이미지 보인다
 $(".gallery .link1 dl").css({ top: 420, opacity: 1 }); //텍스트를 delay해서 띄우기
-// $('.gallery li dd').css({top:450,opacity:1});
 
 function gallery_change() {
   $(".gallery li").fadeOut("300");
@@ -23,12 +22,11 @@ function gallery_change() {
   $(".btn" + cnt).css("width", "200px");
 
   $(".gallery li dl").css("top", 400).css("opacity", 0);
-  //   $('.gallery li p').css('top',500).css('opacity',0);
+
   $(".gallery .link" + cnt)
     .find("dl")
     .delay(500)
     .animate({ top: 420, opacity: 1 }, "slow");
-  //   $('.gallery .link'+cnt).find('p').delay(800).animate({top:450,opacity:1},'slow');
 }
 
 function moveg() {
